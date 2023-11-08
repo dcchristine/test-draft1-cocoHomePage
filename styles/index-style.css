@@ -1,0 +1,1280 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+ /* ********* ROOT *********** */
+  :root{
+    --primary-color:#01644f;
+    --words-shadow:#2e5722;
+    --secondary-color: #ffcf60;
+    --accent-color:#bc1823;
+    --supporting-color:#fff;
+    --shadow-color: #000;
+    --font-style:'Open Sans', sans-serif;
+    --element-shadow:drop-shadow(2px 2px 10px #000000);
+    --element-border:drop-shadow(2px 2px 2px #000000);
+    --main-background: linear-gradient(rgba(3, 83, 67, 0.625), rgba(3, 83, 67, 0.625)), url(../INDEXIMAGES/index-background-one.png);
+    --sub-background: linear-gradient(#ffcf60c6, #ffcf60c6), url(../INDEXIMAGES/index-background-one.png);
+
+    --benefit-one: linear-gradient(rgba(3, 83, 67, 0.625), rgba(3, 83, 67, 0.625)), url(../INDEXIMAGES/index-benefit-one-img.jpg);
+
+    --benefit-two: linear-gradient(rgba(3, 83, 67, 0.625), rgba(3, 83, 67, 0.625)), url(../INDEXIMAGES/index-benefit-two-img.jpg);
+
+    --benefit-three: linear-gradient(rgba(3, 83, 67, 0.625), rgba(3, 83, 67, 0.625)), url(../INDEXIMAGES/index-benefit-three-img.jpg);
+
+    --benefit-four: linear-gradient(rgba(3, 83, 67, 0.625), rgba(3, 83, 67, 0.625)), url(../INDEXIMAGES/index-benefit-four-img.jpg);
+}
+
+   /* ********* UNIVERSAL SELECTOR *********** */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-style);
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+   /* ********* WELCOME PAGE, 1ST TO LOAD *********** */
+
+   /* XL SCREEN DESIGN BREAKPOINT */
+main{
+    background-image: var(--main-background);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    max-width: 100%;
+    z-index: 0;
+}
+
+
+nav{
+    position: relative;
+    background: var(--sub-background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 100%;
+    width: 20%;
+    float: right;  
+    z-index: 5;
+    filter: var(--element-shadow);
+}
+
+nav img{
+    width: 25%;
+    margin: 3% 35%;
+    filter: var(--element-border);
+    z-index: 4;
+}
+
+nav ul{
+    position: absolute;
+    top: 55%;
+}
+
+.logo{
+    position: absolute;
+    top: 15%;
+    left: -28%;
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+.design-nav-one,.design-nav-two{
+    position: absolute;
+    top: 1%;
+    left: -32%;
+    width: 95%;
+    border-radius: 0%;
+    transform: rotate(180deg);
+}
+
+.design-nav-two{
+    top: 73%;
+    transform: rotate(360deg);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin:-1% 5%;
+}
+
+.chinese-lanterns img{
+    width: 40%;
+    float: left;  
+    filter: var(--element-shadow);
+}
+
+.drink-display-1{
+    width: 25%;
+    margin:5% 0% 5% 20%;
+    filter: var(--element-shadow);
+}
+
+section{
+    margin-top: -12%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70vh;
+    position: relative;
+}
+
+section img{
+    position: absolute;
+    top: 40%;
+    left: 72%;
+    width: 32%;
+    height: 50%;
+    z-index: -1;
+    filter: var(--element-shadow);
+}
+
+.welcome-text{
+    font-weight:bolder;
+    text-shadow: 3px 3px #04490081;
+}
+
+
+section h1{
+    font-weight:bolder;
+    height: fit-content;
+    font-size: 10em;
+    color: var(--secondary-color);
+    margin-left: 10%;
+    line-height: 0.9;
+}
+
+section h3{
+    height: 1em;
+    width: max-content;
+    font-size: 5em;
+    color: var(--secondary-color);
+    margin-left: 10%;
+    line-height: 1.5;
+    letter-spacing: 0.5rem;
+
+}
+
+section h5{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    line-height: 1.3;
+    height: 3em;
+    width: 70%;
+    font-size: 2em;
+    color: #ffffff;
+}
+   /* ********* NEW MENU *********** */
+
+.new-menu{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: var(--main-background);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: justify;
+}
+
+.img-new-menu{
+    background-color: var(--secondary-color);
+    height: 85%;
+    width: 35%;
+    margin-left: 10%;
+    filter: var(--element-shadow);
+}
+
+.flower-frame-red{
+    width: 130%;
+    margin: 10% 0 0 -15%;
+}
+
+.new-menu-products{
+    position: absolute;
+    top:70%;
+    left: 30%;
+    width: 110%;
+    transform: translate(-30%,-65%);
+}
+
+.text-new-menu{
+    position: relative;
+    color: var(--supporting-color);
+    margin-left: 5%;
+    height: 70vh;
+    width: 40%;
+}
+
+.page-label{
+    display: flex;
+    color: var(--supporting-color);
+    flex-direction: row;
+    width: 85%;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 10% 0 5% 5%;
+    text-align: right;
+    filter: drop-shadow(3px 3px 3px var(--accent-color));
+}
+
+.page-label hr{
+    margin: 2% 5% 0 0;
+    background-color: var(--supporting-color);
+    height: 2px;
+    width: 70%;
+}
+
+.details-new-menu{
+    height: 60vh;
+    width: 95%;
+    font-size: x-large;
+    font-weight: 700;
+    transform: scale(0.9);
+}
+
+.details-new-menu h5{
+    font-size: 1.5em;
+}
+
+.details-new-menu h2{
+    margin: 5% 0 ;
+    color: var(--secondary-color);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+}
+
+.description-new-menu{
+    font-weight: 500;
+    width: 100%;
+    font-size: smaller;
+}
+
+/* ********* NAVIGATION *********** */
+/* 
+.nav-new-menu{
+    float: right;
+    height: 100vh;
+    width: 10%;
+}
+
+.logo-new-menu{
+    margin: 50% 0% 5% 12% ;
+    height: 15vh;
+}
+
+.nav-new-menu-page img{ 
+    height: 8vh;
+    margin: 10% 0;
+}
+
+
+.nav-new-menu-page{
+    margin: 50% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-top{
+    margin-top: 40%;
+} 
+ */
+/* ********* BENEFITS *********** */
+
+.business-benefits{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background: var(--sub-background);
+}
+
+.benefits-main{
+    position: relative;
+    left: 7%;
+    height: 100vh;
+    width: 45%;
+    color: var(--primary-color);
+    text-transform:uppercase;
+}
+
+.benefits-main img{
+    opacity: 0.75;
+    height: 80vh;
+    position: absolute;
+    z-index: 1;
+    filter: var(--element-shadow);
+}
+
+.benefits-main h2{
+    position: absolute;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    top: 25%;
+    z-index: 2;
+    background-color: var(--supporting-color);
+    color: var(--accent-color);
+    text-transform: capitalize;
+    width: 50%;
+    padding:0.7% 1.5%;
+    filter: var(--element-shadow);
+    font-weight: 900;
+    height: 12%;
+}
+
+.benefits-main h1{
+    font-weight: 700;
+    position: absolute;
+    top: 45%;
+    z-index: 3;
+    font-size: 7rem;
+    line-height: 0.95;
+    text-wrap:nowrap;
+    letter-spacing: 18px;
+    text-shadow: 3px 3px var(--words-shadow);
+}
+
+.benefits-contents{
+    height: 100vh;
+    width: 40%;
+    color: var(--supporting-color);
+}  
+
+.benefits-row-one{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    display: flex;
+    height: 28%;
+    width: 60%;
+    align-items: center;
+}
+
+.benefit-one,.benefit-two,.benefit-three,.benefit-four{
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    padding: 5% 2%;
+    margin:0 3%;
+    line-height: 1.3;
+    filter: var(--element-border);
+}
+
+.benefits-contents h1{
+    font-size: 2.5rem;
+    font-weight:700;
+}
+
+.benefits-contents span{
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
+.benefit-one{
+    background: var(--benefit-one);
+    background-position: center;
+    background-size: cover;
+}
+
+.benefit-two{
+    background: var(--benefit-two);
+    background-position: center;
+    background-size: cover;
+}
+
+.benefit-three{
+    background: var(--benefit-three);
+    background-position: center;
+    background-size: cover;
+}
+
+.benefit-four{
+    position: absolute;
+    width: 27%;
+    height: 28%;
+    top:60%;
+    left: 58%;
+    background: var(--benefit-four);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* ********* CUSTOMER REVIEWS *********** */
+
+.customer-reviews{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background: var(--main-background);
+}
+
+.reviews-left{
+    position: relative;
+    height: 80vh;
+    width: 45%;
+    margin: 5% 0 5% 5%;
+}
+
+.reviews-left img{
+    z-index: 2;
+    height: 100%;
+}
+
+.reviews-right{
+    margin: 0 -5% 0 0;
+    width: 40%;
+    height: 100vh;
+}
+
+.testimonial-carousel{
+    position: absolute;
+    z-index: 4;
+    background: var(--sub-background);
+    color: var(--accent-color);
+    height: 80%;
+    width: 160%;
+    font-family: var(--font-style);
+    top:50%;
+    left:100%;
+    transform:translate(-50%,-50%);
+}
+
+.carousel-inner img{
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 20%;
+}
+
+.carousel-inner h5{
+    position: relative;
+    left: 10%;
+    width:80%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--supporting-color);
+}
+
+.carousel-inner p{
+    position: relative;
+    left: 10%;
+    width:80%;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    background-color: var(--supporting-color);
+    font-weight: 900;
+}
+
+/* ********* FOOTER *********** */
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-image: url(../INDEXIMAGES/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    padding-top: 10%;
+}
+  
+.left-footer {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 10rem 5rem 3rem 5rem;
+    gap: 1rem;
+}
+
+.left-footer h3 {
+    color: var(--four-text-color);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-left: 10%;
+}
+
+.left-footer p {
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding-left: 10%;
+}
+
+.left-footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.left-footer div img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    transition: all .3s;
+}
+
+.left-footer div img:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.9));
+}
+
+.middle-footer {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 4rem 5rem 5rem 5rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.middle-footer h3 {
+    color: var(--four-text-color);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-left: 10%;
+}
+
+.middle-footer p {
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding-left: 10%;
+    font-weight: 800;
+}
+
+.middle-footer .text {
+    margin-left: 8%;
+    padding: 2% 5%;
+    border: 0;
+    border-radius: 50px;
+    font-family: var(--font-style);
+    letter-spacing: .5px;
+    margin-top: 5%;
+    background-color: var(--third-text-color);
+    position: relative;
+}
+
+.middle-footer a {
+    width: 27px;
+    height: 27px;
+    border-radius: 60px;
+    background: var(--primary-color);
+    color: var(--third-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 2rem;
+    margin-top: 2.7rem;
+    transition: all .4s;
+}
+
+.middle-footer a:hover {
+    width: 11.3rem;
+    left: 34.5%;
+}
+
+.right-footer {
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 10rem 5rem 2rem 5rem;
+    gap: 1rem;
+}
+
+.right-footer h3 {
+    color: var(--four-text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.right-footer a {
+    color: var(--four-text-color);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.right-footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.right-footer div img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    transition: all .3s;
+}
+
+.right-footer div img:hover {
+    transform: scale(1.15);
+}
+ /* MEDIUM SCREEN DESIGN BREAKPOINT */
+ @media all and (max-width:1024px){
+
+
+    .chinese-lanterns img{
+        width: 30%;
+        float: left;  
+        filter: var(--element-shadow);
+    }
+
+    .design-nav-two{
+        top: 80%;
+        transform: rotate(360deg);
+    }
+
+    section h1{
+        position: absolute;
+        top: 15%;
+        left: -5%;
+        font-size: 8em;
+    }
+
+    section h3{
+        position: absolute;
+        top: 35%;
+        left: -4%;
+        font-size: 4em;
+    }
+
+    section h5{
+        left: 5%;
+    }
+
+    .drink-display-1{
+        margin:5% 0% 1% 10%;
+    }
+
+    section img{
+        top: 55%;
+        height: 40%;
+    }
+    
+    .img-new-menu{
+        height: 85%;
+        width: 40%;
+        margin-left: 10%;
+    }
+    .flower-frame-red{
+        margin: 20% 0 0 -15%;
+    }
+
+    .text-new-menu{
+        margin-left: 3%;
+    }
+
+    .page-label p{
+        width: 30%;
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+
+    .details-new-menu{
+        transform: scale(0.80);
+        width: 110%;
+    }
+
+    .details-new-menu p{
+        margin-top: -10%;
+    }
+
+    .description-new-menu{
+        line-height: 2rem;
+        padding-top: 15%;
+    }
+
+    .new-menu-products{
+        top:70%;
+        left: 30%;
+    }
+
+    .benefits-main{
+        left: 5%;
+    }
+
+    .benefits-main img{
+        height: 70vh;
+    }
+
+    .benefits-main h2{
+        top: 21%;
+        line-height: 1.3;
+        font-size: 1.1rem;
+        padding:3% 4%;
+        width: 55%;
+    }
+
+    .benefits-main h1{
+        top: 35%;
+        font-size: 5.5rem;
+        letter-spacing: 15px;
+    }
+
+    .benefits-row-one{
+        top: 18%;
+        left: 30%;
+        width: 65%;
+    }
+
+    .benefits-contents h1{
+        font-size: 1.8rem;
+    }
+    
+    .benefits-contents span{
+        font-size: 1rem;
+    }
+
+    .benefit-one,.benefit-two,.benefit-three,.benefit-four{
+        height: 85%;
+        width: 38%;
+    }
+
+    .benefit-four{
+        width: 25%;
+        height: 25%;
+        top:50%;
+        left: 65%;
+    }
+
+    .carousel-inner img{
+        transform: scale(1.6);
+        padding-top: 12%;
+    }
+    
+    .carousel-inner h5{
+        font-weight: 900;
+        font-size: rem;
+        color: var(--primary-color);
+        background-color: var(--supporting-color);
+    }
+    
+    .carousel-inner p{
+        font-size: 1.2rem;
+        color: var(--accent-color);
+        background-color: var(--supporting-color);
+        font-weight: 900;
+    }
+    
+    
+}
+/* COMMON TABLET SCREEN DESIGN BREAKPOINT */
+ @media all and (max-width:768px){
+    .nav{
+        width: 10%;
+    }
+
+    .logo{
+        position: absolute;
+        left:-830%;
+        transform: scale(2);
+        top: 40%;
+        filter: var(--element-border);
+    }
+
+    .design-nav-one, .design-nav-two, .nav ul{
+        display: none;
+    }
+
+    .welcome-text h1{
+        top: 23%;
+        left: 23%;
+        font-size: 5.1rem;
+    }
+
+    .welcome-text h3{
+        letter-spacing: normal;
+        font-size: 3rem;
+        left: 21%;
+        top: 36%;
+    }
+
+    .welcome-text h5{
+        width: 85%;
+        font-size: 1.5rem;
+        left: 12%;
+        font-weight: 700;
+    }
+
+    .drink-display-1{
+        position: absolute;
+        left: 50%;
+        top:12%;
+        transform: scale(0.55);
+    }
+
+    section img{
+        top: 80%;
+        left: 75%;
+        width: 40%;
+        height: 40%;
+        z-index: -1;
+        filter: var(--element-shadow);
+    }
+    
+    .img-new-menu{
+        height: 85vh;
+    }
+
+    .text-new-menu{
+        margin-top: 1%;
+    }
+
+    .details-new-menu{
+        transform: scale(0.7);
+    }
+
+    .details-new-menu h2{
+        font-size: 4rem;
+    }
+
+    .flower-frame-red{
+        margin-top: 60%;
+    }
+
+    .new-menu-products{
+        top:75%;
+    }
+
+    .benefits-contents{
+       margin-top: 5%;
+    }
+
+    .benefits-main h2{
+        top: 33%;
+        width: 65%;
+        line-height: 1;
+    }
+
+    .benefits-main h1{
+        top: 47%;
+        font-size: 4.5rem;
+        letter-spacing: 5px;
+    }
+
+    .benefits-row-one{
+        top: 28%;
+        left: 35%;
+        width: 60%;
+        z-index: 3;
+    }
+
+    .benefits-contents h1{
+        font-size: 1.4rem;
+    }
+    
+    .benefits-contents span{
+        font-size: 0.8rem;
+    }
+
+    .benefit-one,.benefit-two,.benefit-three,.benefit-four{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 65%;
+        width: 38%;
+    }
+
+    .benefit-four{
+        width: 25%;
+        height: 20%;
+        top:58%;
+        left: 65%;
+    }
+
+    .testimonial-carousel{
+        height: 65%;
+        top: 60%;
+    }
+
+    .reviews-left img{
+        margin-top: 15%;
+    }
+
+    .reviews-right{
+        position: absolute;
+        left: 46%;
+        top: 4%;
+        height: 80vh;
+    }
+
+    .carousel-inner img{
+        height: max-content;
+        padding-top: 1%;
+    }
+
+    .carousel-inner h5{
+        font-size: 1.2rem;
+    }
+    
+    .carousel-inner p{
+        font-size: 1rem;
+    }
+ }
+ /* MOBILE L*/
+ @media all and (max-width:426px){
+    .page-label p{
+        font-size: 0.8rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .logo{
+        left:-500%;
+        transform: scale(4);
+        top: 35%;
+    }
+
+    .welcome-text h1{
+        top: 43%;
+        left: -2%;
+        font-size: 4.5em;
+    }
+
+    .welcome-text h3{
+        font-size: 2.5rem;
+        left: -2%;
+        top: 56%;
+    }
+
+    .welcome-text h5{
+        text-align: center;
+        width: 90%;
+        font-size: 1rem;
+        top: 70%;
+        left: 10%;
+    }
+
+    .drink-display-1{
+        left: 55%;
+        top:43%;
+        transform: scale(0.6);
+    }
+
+    section img{
+        top: 85%;
+        left: 70%;
+        width: 50%;
+        height: 30%;
+    }
+
+    .text-new-menu{
+        left: 40%;
+    }
+
+    .img-new-menu{
+        position: absolute;
+        height: 40vh;
+        width: 40vh;
+        top: 25%;
+        left: 10%;
+    }
+
+    .flower-frame-red{
+        position: absolute;
+        top: -75%;
+    }
+
+    .new-menu-products{
+        top:60%;
+    }
+
+    .details-new-menu{
+        position: absolute;
+        left: -90%;
+        width: 200%;
+        top: 15%;
+    }
+
+    .details-new-menu h2{
+        margin-top: 130%;
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .details-new-menu h5{
+        font-size: 1.4rem;
+        margin-top: -4%;
+    }
+
+    .description-new-menu{
+        font-size: 0.9rem;
+        width: 110%;
+        line-height: 1.4rem;
+    }
+
+    .benefits-main h2{
+        left: 10%;
+        top: 23%;
+        line-height: 1;
+        font-size: 0.7rem;
+        padding:8% 4%;
+        width: 80%;
+        height: 8%;
+    }
+
+    .benefits-main h1{
+        top: 70%;
+        font-size: 3.5rem;
+        letter-spacing: 7px;
+    }
+
+    .benefits-row-one{
+        top: 15%;
+        left: 20%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        height: 60%;
+        width: 60%;
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    .benefits-row-one h1{
+        font-size: 1.09rem;
+
+    }
+
+    .benefit-one,.benefit-two,.benefit-three{
+        min-width: 60%;
+    }
+
+    .benefit-four{
+        width: 40%;
+        height: 30%;
+        top:35%;
+        left: 5%;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .testimonial-carousel{
+        height: 40%;
+        top: 60%;
+    }
+
+    .customer-reviews .page-label:nth-child(1){
+        margin-left: -35%;
+    }
+
+    .reviews-left img{
+        margin-top: 16%;
+    }
+
+    .reviews-right{
+        position: absolute;
+        left: 46%;
+        top: 4%;
+        height: 80vh;
+    }
+
+    .carousel-inner img{
+        padding-top: 3%;
+    }
+
+    .yellow-chinese-frame{
+        position: absolute;
+        transform: scale(0.8);
+        top: 8%;
+        left: -3%;
+    }
+ }
+ /* MOBILE M */
+ @media all and (max-width:376px){
+    .page-label p{
+        font-size: 0.7rem;
+    }
+    .logo{
+        transform: scale(3.85);
+    }
+
+    .welcome-text h1{
+        top: 44%;
+        left: -1%;
+        font-size: 4em;
+    }
+
+    .welcome-text h3{
+        font-size: 2.25rem;
+    }
+
+    .welcome-text h5{
+        font-size: 0.9rem;
+        top: 68%;
+    }
+
+    .drink-display-1{
+        left: 56%;
+        top:42%;
+        transform: scale(0.6);
+    }
+
+    section img{
+        top: 90%;
+        left: 65%;
+        width: 55%;
+    }
+
+    * .page-label:nth-child(1){
+        margin-top: 15%;
+    }
+
+    .img-new-menu{
+        height: 35vh;
+        width: 35vh;
+    }
+
+    .new-menu-products{
+        top:60%;
+    }
+
+    .benefits-main h1{
+        top: 70%;
+        font-size: 3rem;
+        letter-spacing: 7px;
+    }
+
+    .testimonial-carousel{
+        height: 35%;
+        left: 105%;
+    }
+    .reviews-right{
+        left: 50%;
+    }
+
+    .reviews-left{
+        left:-3%;
+    }
+    .carousel-inner img{
+        padding-top: 1%;
+    }
+
+}
+/* MOBILE S */
+@media all and (max-width:320px){
+    .page-label p{
+        font-size: 0.6rem;
+    }
+    .welcome-text h1{
+        top: 46%;
+        left: -1%;
+        font-size: 3.25em;
+    }
+
+    .welcome-text h3{
+        font-size: 2rem;
+    }
+
+    .welcome-text h5{
+        font-size: 0.75rem;
+        top: 67%;
+    }
+
+    .drink-display-1{
+        top:41%;
+    }
+
+    section img{
+        top: 95%;
+        left: 60%;
+        width: 65%;
+    }
+
+    * .page-label:nth-child(1){
+        margin-top: 20%;
+    }
+
+    .img-new-menu{
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .details-new-menu{
+        font-size: large;
+    }
+
+    .details-new-menu h2{
+        font-size: 2rem;
+        width: 140%;
+    }
+
+    .description-new-menu{
+        width: 110%;
+    }
+
+    .benefits-main h1{
+        top: 75%;
+        left: 2%;
+        font-size: 2.3rem;
+    }
+
+    .benefits-main h2{
+        font-size: 0.60rem;
+        left: 12%;
+    }
+
+    .benefits-row-one{
+        height: 63%;
+        width:60%;
+    }
+    .benefits-row-one h1{
+        font-size: 1rem;
+    }
+
+    .benefit-four{
+        width: 37%;
+        height: 35%;
+        top:35%;
+        left: 7%;
+    }
+    
+    .testimonial-carousel{
+        height: 30%;
+        left: 108%;
+    }
+    .reviews-right{
+        left: 50%;
+    }
+
+}
